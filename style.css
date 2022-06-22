@@ -90,8 +90,6 @@
 
 }
 
-
-
 header{
     width: 100%;
     height: 100vh;
@@ -157,9 +155,7 @@ header{
 }
 
 .banner button{
- 
     font-family: var(--font-action);
-
     color: #fff;
     text-transform: uppercase;
     letter-spacing: .1rem;
@@ -173,10 +169,12 @@ header{
     cursor: pointer;
     opacity: 0;
     animation: moveBanner 1s 0.9S forwards;
+    transition: all 1s ease-in-out;
 }
 
 .banner button:hover{
-    opacity: 0.8;
+    opacity: 0;
+    background: red;
 }
 
 @keyframes moveBanner{
@@ -227,11 +225,12 @@ header{
     color: #6a3093;
 }
 
-.social-media {
-    background-color:rgba(255, 0, 0, .5);
+.social-media {    
     position: absolute;
-    bottom: 2rem;
+    bottom: 3rem;
     width: 100%;
+    height: 2rem;
+    font-size: 2rem;
     display: flex;
     justify-content:  space-evenly;
 }
@@ -239,9 +238,6 @@ header{
 .social.media i{
     background-color: #6a3093;
     color: rgba(255, 255, 255, 0.1);
-    height: 2.5rem;
-    width: 2.5rem;
-    font-size: 1.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
