@@ -16,6 +16,10 @@
     --font-action: "Mulish", serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 .hamburguer{
     width: 2rem;
     height: 2rem;
@@ -47,7 +51,6 @@
 .show-menu #line1{
     transform: rotate(45deg) translate(.3rem, .45rem);
 }
-
 
 .show-menu #line2{
     opacity: 0;
@@ -85,7 +88,6 @@
 
 .show-menu .hamburguer:hover span{
     opacity: 1;
-
 }
 
 header{
@@ -553,7 +555,7 @@ header{
 
 .sessao-orcamento h1{
     position: absolute;
-    top: -4.5rem;
+    top: -4rem;
     left: 2rem;    
     background: #6a3093;
     background: -webkit-linear-gradient(to right, #a044ff, #6a3093);
@@ -561,17 +563,18 @@ header{
     padding: 0 3rem;
     color: #fff;
     font-family: var(--font-primary);
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: lighter;
     box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.5);
     border-radius: 10px;    
 }
 
 .sessao-orcamento form{
-    margin: 4rem;
+    margin: 8rem;
     display: grid;
     grid-template-columns: auto 1fr;
     column-gap: 2rem;
+    row-gap: 2rem;
 }
 
 .sessao-orcamento label{
@@ -592,7 +595,17 @@ header{
 
 .btn-orcamento{
     text-transform: uppercase;
+    font-size: 10px;
     padding: 1rem;
     cursor: pointer;
     grid-column: 2;
 }
+
+
+
+/*Responsividade do site
+@media (max-width: 768px) {
+    .conhecimentos{
+        background: red;
+    }
+}*/
