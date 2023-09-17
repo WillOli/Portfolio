@@ -651,9 +651,78 @@ footer{
 
 
 
-/*Responsividade do site
-@media (max-width: 768px) {
-    .conhecimentos{
-        background: red;
+/* Adicione este código no final do seu arquivo CSS */
+
+/* Estilos responsivos */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
     }
-}*/
+
+    .hamburguer {
+        right: 1rem;
+        top: 1rem;
+    }
+
+    .show-menu .hamburguer {
+        right: 10rem;
+    }
+
+    .banner {
+        top: 10%;
+        left: 5%;
+        text-align: center;
+    }
+
+    .banner h1 {
+        font-size: 2.4rem;
+        line-height: 2.8rem;
+    }
+
+    .banner p {
+        font-size: 1.6rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .banner button {
+        font-size: 1.2rem;
+        padding: 0.8rem 2rem;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        right: -100%;
+    }
+
+    .show-menu .sidebar {
+        right: 0;
+    }
+
+    .menu {
+        top: 20%;
+    }
+
+    .menu-link {
+        font-size: 1.8rem;
+    }
+
+    .social-media {
+        bottom: 1rem;
+    }
+
+    .social-media a {
+        font-size: 2rem;
+    }
+
+    .conhecimentos {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 1rem;
+    }
+
+    .conhecimento {
+        grid-column: auto;
+        grid-row: auto;
+    }
+}
